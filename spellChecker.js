@@ -22,7 +22,7 @@ var spellChecker = function( options ) {
 	var MIN_WORD_FREQUENCY = options.minWordFrequency || 5;
 	var basedData = {};
 	
-	var levinshteinDistance = function( str1, str2 ) {
+	var levenshteinDistance = function( str1, str2 ) {
 
 		if( str1 === undefined || str1 === null || str1.trim() === "" ) return false;
 		if( str2 === undefined || str2 === null || str2.trim() === "" ) return false;
@@ -97,7 +97,7 @@ var spellChecker = function( options ) {
 
 		//getting data about similar words
 		for( var key in basedData ) {
-			var editDistance = levinshteinDistance( key, word );
+			var editDistance = levenshteinDistance( key, word );
 			//filtering by edit distance
 			if( editDistance <= MAX_EDIT_DISTANCE ) {
 				candidates.push({
