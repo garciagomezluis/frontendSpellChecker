@@ -4,10 +4,6 @@
 
 Yep, this is another (and **very simple**: It means that special characters and latins are not contemplated for example) javascript Peter Norvig's implementation of his "spelling corrector" (but I consider this is more like a interpretation of his [essay](http://norvig.com/spell-correct.html)). As he mentioned in the article, the working process is based on a little probability theory and all this is implemented in two technical steps: loading data (training) and comparing values to "guess" the word.
 
-##Why another?
-
-I just wanted to try something in my free time.
-
 ##Can it be used?
 
 I wouldn't, but if you want to try is just to load a simple file. (Brief explanation:) As the title says it is a frontend spell checker (it's based on Norvig's work). So if anyone wants to use it, it would be recommendable to load a json file in which all the common words are keys and the concurrences or times for it are values. This file can be had on a server and when a user looks for a word, the values are modified for the next one who is going to try (I guess this is the "probability" part). If you are going to use it in a "production mode" I suggest to keep in the json file static information like cities or countries.
@@ -83,4 +79,4 @@ If I made a mistake please (In writing too (my native language is Spanish)) [tel
 
 ##Licence
 
-All the content of this repository is under the [General Public Licence](http://www.gnu.org/copyleft/gpl.html)
+[General Public Licence](http://www.gnu.org/copyleft/gpl.html)
