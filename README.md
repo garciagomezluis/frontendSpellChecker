@@ -4,9 +4,13 @@
 
 Yes, this is another (and **very simple**: It means that special characters and latins are not contemplated for example) javascript Peter Norvig's implementation of his "spelling corrector" (but I consider this is more like a interpretation of his [essay](http://norvig.com/spell-correct.html)). As he mentioned in the article, the working process is based on a little probability theory and all this is implemented in two technical steps: loading data (training) and comparing values to "guess" the word.
 
+##Can I try?
+
+[Here](http://yatusabee.com.ar/spellChecker): It works fine for one-word phrases (I guess it would be useful when static data is required).
+
 ##Can it be used?
 
-I wouldn't, but if you want to try is just to load a simple file in the front-side.
+I wouldn't, but if you want to try is just to load `spellChecker.js` in the front-side.
 
 **Example**
 
@@ -68,10 +72,6 @@ The checker object has only two public methods:
 
 * `loadTrainingFile`: Sends a request to the path specified in *locationAddWord* to get words.json
 * `getInfoWithExtraData`: Used for testing
-
-##Can I try now?
-
-[Here](http://yatusabee.com.ar/spellChecker): It works fine for one-word phrases (I guess it could be useful when static data is required).
 
 ##Have this a mistake?
 
